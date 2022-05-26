@@ -5,7 +5,7 @@ const toDos = [
 const List = (props) => {
     return (<ul className="List">
         {toDos.map((item, index) =>{
-            return (<li id={index} onClick = {() => props.completeItem(index)} className = "ListItem" key ={item}><h2>{item}<input className = "Checkbox" type="checkbox"></input></h2></li>)
+            return (<li id={index} className = "ListItem" key ={item}><h2>{item}<input onClick = {() => props.completeItem(index)} className = "Checkbox" type="checkbox"></input></h2></li>)
         })}
     </ul>)
 }
