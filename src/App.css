@@ -22,13 +22,16 @@
 }
 
 .ListItem {
-  text-align: left;
+  text-align: right;
   background-color: rgb(236, 240, 243);
-  margin: 2mm;
+  margin-left: 30mm;
+  margin-right: 4mm;
 }
 
 .Checkbox {
-  margin-left: 500;
+  transform: scale(1.75);
+  margin-left: 3mm;
+  align-items: center;
 }
 
 .App-link {

@@ -2,10 +2,10 @@ const toDos = [
     "pick up laundry", "feed the dog", "wax the car"
 ]
 
-const List = () => {
-   return (<ul className="List">
-        {toDos.map((item) =>{
-            return (<li className = "ListItem" key ={item}><h2>{item} <input className = "Checkbox" type="checkbox"></input></h2></li>)
+const List = (props) => {
+    return (<ul className="List">
+        {toDos.map((item, index) =>{
+            return (<li id={index} onClick = {() => props.completeItem()} className = "ListItem" key ={item}><h2>{item}<input className = "Checkbox" type="checkbox"></input></h2></li>)
         })}
     </ul>)
 }
