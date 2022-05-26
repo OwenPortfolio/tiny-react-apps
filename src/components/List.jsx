@@ -3,9 +3,9 @@ const toDos = [
 ]
 
 const List = () => {
-   return (<ul>
+   return (<ul className="List">
         {toDos.map((item) =>{
-            return (<li key ={item}><h2>{item}</h2></li>)
+            return (<li className = "ListItem" key ={item}><h2>{item} <input className = "Checkbox" type="checkbox"></input></h2></li>)
         })}
     </ul>)
 }
