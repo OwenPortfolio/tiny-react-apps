@@ -6,6 +6,7 @@ const AddItem  = (setList) => {
         setList((currentList) => {
             return[...currentList, newToDo]
         })
+        setNewToDo("")
     }
     const [newToDo, setNewToDo] = useState('');
     return (

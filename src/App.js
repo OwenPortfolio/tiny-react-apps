@@ -4,9 +4,10 @@ import Header from "./components/Header";
 import { useState } from "react";
 import Button from "./components/Button";
 import AddItem from "./components/AddItem";
+import DeleteItems from "./components/DeleteItems";
 
 function App() {
-  const [state, setState] = useState([0]);
+  const [state] = useState([0]);
 
   function completeItem(index) {
     let checkStatus = [state, 1];
@@ -25,13 +26,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <List
-        state={state}
-        setState={setState}
-        completeItem={completeItem}
-        AddItem={AddItem}
-      />
-
+      <List state={state} completeItem={completeItem} AddItem={AddItem} />
       <Button completeAll={completeAll} />
     </div>
   );
