@@ -41,7 +41,7 @@
 .ListItem:hover{
   word-wrap: break-word;
   background-color: rgb(14, 105, 185);
-  color: white;
+  color: rgb(217, 229, 238);
   transform: scale(1.05);
 }
 
@@ -57,10 +57,17 @@
   margin-left: 1.5em;
   padding: 0.7em;
 }
+
 .Button:hover {
   background-color: white;
   color: rgb(47, 126,195);
   transform: scale(1.05);
+}
+
+.Button:active {
+  background-color: rgb(114, 159, 201);
+  color: white;
+  transform: scale(0.95);
 }
 .Form{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -74,17 +81,36 @@
 
 #ClearAll {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(47, 126, 195);
+  border: none;
+  border-radius: 5px;
+  color: white;
   font-size: 0.6em;
   font-weight: bold;
   margin: 0.4em;
   margin-left: 1.5em;
+  transform: scale(1.75);
   padding: 0.7em;
-  transform: scale(1.3);
+}
+
+#ClearAll:hover {
+  background-color: rgb(14, 79, 140);
+  color: white;
+  padding: 0.7em;
 }
 
 #AddToDo {
+  padding: 0.35em;
+  color: white;
+  border-radius: 5px;
+  border:none;
+  background-color: rgb(47, 126, 195);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: 1.25em;
   margin-left: 0.2em;
+}
+
+#AddToDo:hover{
+  background-color: rgb(14, 79, 140);
 }
