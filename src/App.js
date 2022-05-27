@@ -3,7 +3,9 @@ import './App.css';
 import List from './components/List';
 import Header from './components/Header';
 import { useState } from 'react';
-import Button from './components/Button'
+import Button from './components/Button';
+import AddItem from './components/AddItem';
+
 
 function App() {
   const [state, setState] = useState([0]);
@@ -25,7 +27,8 @@ function App() {
   return (
     <div className="App">
         <Header />
-        <List state = {state} setState = {setState} completeItem = {completeItem} />
+        <List state = {state} setState = {setState} completeItem = {completeItem} AddItem = {AddItem}/>
+       
         <Button completeAll = {completeAll} />
     </div>
   );

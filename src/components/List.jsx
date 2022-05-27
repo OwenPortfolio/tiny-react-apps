@@ -7,6 +7,7 @@ const List = (props) => {
         {toDos.map((item, index) =>{
             return (<li id={index} className = "ListItem" key ={item}><h2>{item}<input onClick = {() => props.completeItem(index)} className = "Checkbox" type="checkbox"></input></h2></li>)
         })}
+        {props.AddItem()}
     </ul>)
 }
 
