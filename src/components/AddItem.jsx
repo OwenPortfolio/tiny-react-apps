@@ -1,15 +1,5 @@
 import {useState} from "react";
 
-// const handleSubmit = (event) => {
-//     event.preventDefault();
-//     setList((currList) => {
-//       return [newItem, ...currList];
-//     });
-//     setNewItem('');
-//   };
-
-
-
 const AddItem  = (setList) => {
     const handleSubmit = (event) =>{
         event.preventDefault();
