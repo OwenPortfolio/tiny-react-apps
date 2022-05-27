@@ -10,13 +10,12 @@ const AddItem  = (setList) => {
     }
     const [newToDo, setNewToDo] = useState('');
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="Form" onSubmit={handleSubmit}>
             <label>
-                Add a To-Do:
                 <input value = {newToDo}
                     onChange={(event) => setNewToDo(event.target.value)}/>
             </label>
-            <button type="submit">Add To-Do</button>
+            <button id="AddToDo" type="submit">Add A To-Do</button>
         </form>       
     )
 }

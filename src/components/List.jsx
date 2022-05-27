@@ -19,10 +19,11 @@ const List = (props) => {
 
     return (<ul className="List">
         {list.map((item, index) =>{
-            return (<li id={index} className = "ListItem" key ={item}><h2>{item}<input onClick = {() => deleteItems(index)} className = "Checkbox" type="checkbox"></input></h2></li>)
+            return (<li id={index} className = "ListItem" key ={item}><h2>{item}<button onClick = {() => deleteItems(index)} className = "Button" type="button">Clear</button></h2></li>)
         })}
         {props.AddItem(setList)}
-        <button onClick = {deleteAll}>Clear All</button>
+        <br></br>
+        <button id="ClearAll" onClick = {deleteAll}>Clear All</button>
     </ul>)
 }
 
